@@ -1,0 +1,8 @@
+#detect OS,support Linux and Mac OS
+UNAME := $(shell uname)
+ifeq ($(UNAME), Linux)
+	include LinuxMakeBase.mk
+endif
+ifeq ($(UNAME), Darwin)
+	include MacMakeBase.mk
+endif
