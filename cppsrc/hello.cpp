@@ -1,9 +1,8 @@
 #include <iostream>
-#include <string>
 #include "hello.h"
 
 using namespace afo::cpp;
 
-void Hello::say(const std::string& name){
+void Hello::say(char *name){
 	std::cout<<"hello "<<name<<std::endl;
 }

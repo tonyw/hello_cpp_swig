@@ -1,5 +1,3 @@
-LFLAGS +=  -pthread -lrt
-
 SHARED  = 1
 
 TARGET  = libhello.so

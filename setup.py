@@ -1,5 +1,18 @@
-from distutils.core import setup, Extension
+from setuptools import setup, Extension, find_packages
 
-afo_module = Extension('_afo',sources=['src/hello.h','src/hello.cpp','src/hello_wrap.cxx'], extra_compile_args=['-g'], extra_link_args='_hello.so')
+afo_module = Extension('_hello_swig',
+                       sources=['src/hello_wrap.cxx'],
+                       extra_compile_args=['-g'],
+                       include_dirs=['cppsrc'],
+                       library_dirs=["bin"],
+                       libraries=["hello"])
 
-setup(name = "afo", version = "1.0", ext_modules = [afo_module], py_modules = ["src/afo"])
+setup(name="hello_swig",
+      version="0.0.1",
+      description='hello_swig',
+      author='python newer',
+      author_email='dont_thank_to_me@meituan.com',
+      keywords='hello,swig',
+      ext_modules=[afo_module],
+      platforms=['any'],
+      packages=find_packages(where='swigsrc',include=['hello_swig']))

@@ -18,9 +18,9 @@ BIN_DIR = bin
 DATA_DIR = data
 DOC_DIR = doc
 CONF_DIR = conf
-INC_DIR = include
+INC_DIR = cppsrc
 OBJ_DIR = obj
-SRC_DIR = src
+SRC_DIR = cppsrc
 TEST_DIR = test
 PROJECT_NAME = $(shell basename $(shell pwd))
 

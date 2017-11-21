@@ -24,9 +24,9 @@ MKDIR         = mkdir -p
 
 # Directory settings
 BIN_DIR = bin
-INC_DIR = src
+INC_DIR = cppsrc
 OBJ_DIR = obj
-SRC_DIR = src
+SRC_DIR = cppsrc
 TEST_DIR = test
 
 SRC_OBJ_PATH = $(OBJ_DIR)

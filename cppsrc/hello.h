@@ -9,7 +9,7 @@ namespace cpp
 	class Hello
 	{
 	public:
-		void say(const std::string& name);
+		void say(char *name);
 	};
 
 }
